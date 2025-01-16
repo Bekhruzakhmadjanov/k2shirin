@@ -1,0 +1,201 @@
+/* src/components/WhyUs.css */
+
+/* Use the same fonts and color style approach as AboutUs */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
+/* Base section styling */
+.whyus-section {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  font-family: 'Comic Sans MS', sans-serif;
+
+
+  .whyus-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #f97316;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Desktop grid */
+  .whyus-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .whyus-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Card (desktop style) */
+  .card {
+    width: 100%;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    color: #f9f9f9;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fef9e7, #fff7dd);
+  }
+
+  /* Make smaller on mobiles and horizontally scrollable */
+  @media (max-width: 840px) {
+    .whyus-container {
+      display: flex;
+      /* Switch to flex layout */
+      flex-wrap: nowrap;
+      /* Prevent wrapping */
+      overflow-x: auto;
+      /* Horizontal scroll */
+      gap: 1rem;
+    }
+
+    .card {
+      min-width: 14rem;
+      /* Fixed width so we can scroll horizontally */
+      height: 22rem;
+      /* Smaller height on mobile */
+      flex: 0 0 auto;
+      /* Prevent shrinking/growing */
+      margin-right: 0.5rem;
+      /* Spacing between cards */
+    }
+
+    /* Remove absolute positioning to keep content visible at smaller sizes */
+    .card img,
+    .card-content,
+    .card-content h2,
+    .card-content p,
+    .card-content a {
+      position: static !important;
+      opacity: 1 !important;
+      transition: none !important;
+    }
+
+    /* Adjust card content spacing on mobile */
+    .card-content {
+      padding: 1rem;
+      color: #222;
+    }
+
+    .card-content h2 {
+      margin-bottom: 0.5rem;
+      color: #f97316;
+      font-size: 1.2rem;
+      font-family: 'Comic Sans MS', sans-serif;
+      text-transform: uppercase;
+    }
+
+    .card-content p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-content a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.85rem;
+      border-radius: 9999px;
+      background: linear-gradient(to right, #fbbf24, #f97316);
+      color: #fff;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  /* Desktop image */
+  .card img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transition: opacity 0.2s ease-out;
+  }
+
+  /* Desktop card content transitions */
+  .card-content h2 {
+    position: absolute;
+    inset: auto auto 60px 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-family: 'Comic Sans MS', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #f97316;
+  }
+
+  .card-content p,
+  .card-content a {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    color: #fff;
+  }
+
+  .card-content p {
+    inset: auto auto 80px 30px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .card-content a {
+    inset: auto auto 30px 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    background: linear-gradient(to right, #fbbf24, #f97316);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+  }
+
+  .card-content a:hover {
+    transform: scale(1.05);
+  }
+
+  .material-symbols-outlined {
+    vertical-align: middle;
+    margin-left: 0.3rem;
+  }
+
+  /* Hover effects for desktop only */
+  @media (min-width: 841px) {
+    .card:hover img {
+      transition: opacity 0.3s ease-in;
+      opacity: 1;
+    }
+
+    .card:hover h2 {
+      inset: auto auto 150px 30px;
+      transition: inset 0.3s ease-out;
+    }
+
+    .card:hover p,
+    .card:hover a {
+      opacity: 1;
+      transition: opacity 0.5s 0.1s ease-in;
+    }
+  }
+
+}
