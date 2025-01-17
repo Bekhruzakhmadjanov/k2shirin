@@ -17,7 +17,7 @@
 body {
   @apply bg-white text-gray-700;
   margin: 0;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Arial', 'Helvetica', sans-serif;
 }
 
 .max-width-container {

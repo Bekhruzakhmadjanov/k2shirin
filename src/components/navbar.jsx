@@ -124,7 +124,7 @@ const Navbar = () => {
           <div ref={langMenuRef} className="relative mt-8">
             <button
               onClick={() => setLangMenuOpen(!langMenuOpen)}
-              className="focus:outline-none text-white hover:text-orange-300 transition-colors"
+              className="focus:outline-none text-white uppercase hover:text-orange-300 transition-colors"
             >
               Язык
             </button>
