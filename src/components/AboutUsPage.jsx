@@ -18,7 +18,7 @@ const AboutUsPage = () => {
           </div>
           <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
             <img
-              src="/images/IMG_5468.PNG"
+              src="/images/whyuscard11.PNG"
               alt="Shirin Brand Showcase"
               className="w-2/3 animate-slide-up"
             />

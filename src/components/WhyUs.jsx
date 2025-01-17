@@ -9,7 +9,7 @@ const reasons = [
     description:
       'Наша продукция проходит строгий контроль, чтобы каждый кусочек был свежим и вкусным.',
     image:
-      '/images/whyuscard1.png',
+      '/images/whyuscard11.PNG',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const reasons = [
     description:
       'Мы используем лишь натуральные компоненты без искусственных добавок.',
     image:
-      '/images/whyuscard2.png',
+      '/images/whyuscard22.JPG',
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const reasons = [
     description:
       'Мы работаем над уникальными вкусами, которых нет у других производителей.',
     image:
-      '/images/whyuscard3.png',
+      '/images/product7.PNG',
   },
 ];
 

@@ -7,14 +7,14 @@ import 'swiper/css/navigation';
 
 const Products = () => {
   const slides = [
-    { id: 1, src: '/images/product2.JPG', title: 'Шоколадные конфеты', description: 'Нежнейший вкус и ручная работа' },
-    { id: 2, src: '/images/product3.JPG', title: 'Ароматное печенье', description: 'Сдобное печенье для всей семьи' },
-    { id: 3, src: '/images/product4.JPG', title: 'Торты на заказ', description: 'Сладкие шедевры для особых случаев' },
-    { id: 4, src: '/images/product5.JPG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 5, src: '/images/product1.JPG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 6, src: '/images/product6.JPG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 7, src: '/images/product7.JPG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 8, src: '/images/product8.JPG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+    { id: 1, src: '/images/product2.PNG', title: 'Шоколадные конфеты', description: 'Нежнейший вкус и ручная работа' },
+    { id: 2, src: '/images/product3.PNG', title: 'Ароматное печенье', description: 'Сдобное печенье для всей семьи' },
+    { id: 3, src: '/images/product4.PNG', title: 'Торты на заказ', description: 'Сладкие шедевры для особых случаев' },
+    { id: 4, src: '/images/product5.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+    { id: 5, src: '/images/product1.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+    { id: 6, src: '/images/product6.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+    { id: 7, src: '/images/product7.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+    { id: 8, src: '/images/product8.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
 
   ];
 

@@ -1,14 +1,14 @@
 import React from 'react';
 
 const products = [
-  { id: 1, image: "/images/product1.JPG", name: "Sweet Corn Classic" },
-  { id: 2, image: "/images/product2.JPG", name: "Sweet Corn Premium" },
-  { id: 3, image: "/images/product3.JPG", name: "Sweet Corn Deluxe" },
-  { id: 4, image: "/images/product4.JPG", name: "Sweet Corn Special" },
-  { id: 5, image: "/images/product5.JPG", name: "Sweet Corn Delight" },
-  { id: 6, image: "/images/product6.JPG", name: "Sweet Corn Luxury" },
-  { id: 7, image: "/images/product7.JPG", name: "Sweet Corn Exclusive" },
-  { id: 8, image: "/images/product8.JPG", name: "Sweet Corn Supreme" },
+  { id: 1, image: "/images/product1.PNG", name: "Sweet Corn Classic" },
+  { id: 2, image: "/images/product2.PNG", name: "Sweet Corn Premium" },
+  { id: 3, image: "/images/product3.PNG", name: "Sweet Corn Deluxe" },
+  { id: 4, image: "/images/product4.PNG", name: "Sweet Corn Special" },
+  { id: 5, image: "/images/product5.PNG", name: "Sweet Corn Delight" },
+  { id: 6, image: "/images/product6.PNG", name: "Sweet Corn Luxury" },
+  { id: 7, image: "/images/product7.PNG", name: "Sweet Corn Exclusive" },
+  { id: 8, image: "/images/product8.PNG", name: "Sweet Corn Supreme" },
 ];
 
 const ProductsPage = () => {
