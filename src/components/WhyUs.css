@@ -15,7 +15,7 @@
   .whyus-heading {
     font-size: 3.5rem;
     font-weight: 800;
-    color: #000000;
+    color: #f97316;
     margin-bottom: 2rem;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
@@ -50,6 +50,41 @@
     background: linear-gradient(to bottom, #fef9e7, #fff7dd);
   }
 
+  .card-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Place the image at the bottom layer */
+  }
+  
+  .card-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Apply gradient */
+    z-index: 1; /* Place the gradient above the image */
+    pointer-events: none; /* Prevent gradient from blocking interactions */
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the gradient */
+    color: #ffffff; /* Set text color to white for contrast */
+  }
+  
   /* Make smaller on mobiles and horizontally scrollable */
   @media (max-width: 840px) {
     .whyus-container {

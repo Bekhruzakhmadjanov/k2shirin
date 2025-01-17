@@ -36,7 +36,9 @@ const WhyUs = () => {
       <div className="whyus-container">
         {reasons.map((reason) => (
           <div className="card" key={reason.id}>
-            <img src={reason.image} alt={`reason-${reason.id}`} />
+            <div className="card-image">
+              <img src={reason.image} alt={`reason-${reason.id}`}/>
+            </div>
             <div className="card-content">
               <h2>{reason.title}</h2>
               <p>{reason.description}</p>
