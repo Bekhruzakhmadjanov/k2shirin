@@ -42,8 +42,8 @@ const WhyUs = () => {
             <div className="card-content">
               <h2>{reason.title}</h2>
               <p>{reason.description}</p>
-              <a href="#learn-more" className="button">
-                Подробнее
+              <a href="/about" className="button">
+                Подробнее 
                 <span className="material-symbols-outlined">arrow_right_alt</span>
               </a>
             </div>
