@@ -33,3 +33,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Hide scrollbar for Tailwind */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Custom Swiper arrow styles */
+.swiper-button-next, .swiper-button-prev {
+  color: #f97316; /* Set arrow color to orange */
+  font-size: 1.5rem; /* Adjust size if needed */
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  color: #fb923c; /* Slightly lighter orange on hover */
+}

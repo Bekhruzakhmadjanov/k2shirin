@@ -1,4 +1,9 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/autoplay';
 
 const products = [
   { id: 1, image: "/images/product1.PNG", name: "Sweet Corn Classic" },
@@ -31,7 +36,7 @@ const ProductsPage = () => {
         {products.map((product) => (
           <figure
             key={product.id}
-            className="card w-56 h-76 relative overflow-hidden shadow-md rounded-lg bg-white hover:shadow-lg transition-transform duration-300"
+            className="card w-56 h-64 relative overflow-hidden shadow-md rounded-lg bg-white hover:shadow-lg transition-transform duration-300"
           >
             <img
               src={product.image}
@@ -53,13 +58,55 @@ const ProductsPage = () => {
       {/* Certificates Section */}
       <section className="py-16 text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-600 animate-scale-up">Сертификаты</h2>
-          <p className="text-gray-600 mt-2 text-lg px-6 animate-slide-up">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-scale-up">
+            Сертификаты
+          </h2>
+          <p className="text-gray-600 mt-2 text-lg px-6 py-6 animate-slide-up">
             Shirin сертифицирована по международным стандартам качества и
             безопасности продукции. Наши сертификаты — это гарантия высокого
             уровня каждого изделия.
           </p>
-          <div className="flex flex-wrap justify-center gap-16 mt-4">
+
+          {/* Swiper Carousel for Smaller Screens */}
+          <div className="md:hidden mt-8">
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              navigation
+              autoplay={{
+                delay: 3000, // 3 seconds per slide
+                disableOnInteraction: false,
+              }}
+              loop={true}
+              slidesPerView={1} // Show one slide at a time
+              spaceBetween={20}
+              className="max-w-sm mx-auto"
+            >
+              <SwiperSlide>
+                <img
+                  src="/images/certificate1.jpg"
+                  alt="ISO Quality Certificate"
+                  className="rounded-lg hover:scale-105 transition-transform duration-300"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="/images/certificate2.jpg"
+                  alt="Safety Certificate"
+                  className="rounded-lg hover:scale-105 transition-transform duration-300"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  src="/images/certificate3.jpg"
+                  alt="Sustainability Certificate"
+                  className="rounded-lg hover:scale-105 transition-transform duration-300"
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          {/* Desktop Grid Layout */}
+          <div className="hidden md:flex flex-wrap justify-center gap-16 mt-4">
             <img
               src="/images/certificate1.jpg"
               alt="ISO Quality Certificate"
