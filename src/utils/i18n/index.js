@@ -8,22 +8,23 @@ import uzTranslation from './locales/uz/uz.json';
 
 // Resources for translations
 const resources = {
+  uz: { translation: uzTranslation },
   en: { translation: enTranslation },
-  ru: { translation: ruTranslation },
-  uz: { translation: uzTranslation }
+  ru: { translation: ruTranslation }
 };
 
-// Retrieve saved language from localStorage or fallback to Russian
-const savedLanguage = localStorage.getItem('language') || 'ru';
+// Check for saved language or set default to Uzbek
+let savedLanguage = localStorage.getItem('language');
+let defaultLanguage = savedLanguage || 'uz';
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: savedLanguage, // Set the default language
-    fallbackLng: 'ru',
+    lng: defaultLanguage, // Explicitly set to Uzbek if no language is saved
+    fallbackLng: 'uz', // Default to Uzbek
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // React already escapes by default
     },
   });
 
