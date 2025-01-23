@@ -1,0 +1,156 @@
+{
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "menu": "Menu",
+    "language": "Language"
+  },
+
+  "hero": {
+    "welcome": "Welcome to the world of Shirin!",
+    "tasteKnown": "The taste everyone knows.",
+    "learnMore": "Discover more about us and our product.",
+    "familySnack": "We offer a wide range of sweets and snacks that are suitable for the whole family. Our products are created from the finest ingredients and traditions to ensure that every bite brings joy and pleasure.",
+    "joinMillions": "Join millions of satisfied customers who trust Shirin quality. Find out more about our range and make every moment sweet!",
+    "readMore": "Read more",
+    "collapse": "Collapse",
+    "viewProducts": "View Products",
+    "contactUs": "Contact Us"
+  },
+
+  "products": {
+    "title": "Our Products",
+    "chocolates": {
+      "title": "Chocolate Candies",
+      "description": "Delicate taste and handmade craftsmanship."
+    },
+    "cookies": {
+      "title": "Aromatic Cookies",
+      "description": "Buttery cookies for the whole family."
+    },
+    "cakes": {
+      "title": "Custom Cakes",
+      "description": "Sweet masterpieces for special occasions."
+    },
+    "fruitDesserts": {
+      "title": "Fruit Desserts",
+      "description": "Refreshing flavors and natural ingredients."
+    }
+  },
+
+  "aboutUs": {
+    "title": "About Us",
+    "paragraph1": "Shirin is a leading company specializing in the production of crispy corn snacks, loved by millions in Uzbekistan, Kazakhstan, and Kyrgyzstan. Our snacks are made with care and adhere to high-quality standards to bring joy and a festive atmosphere to every bite.",
+    "paragraph2": "Using the best varieties of corn and natural ingredients, we create innovative flavors that delight both children and adults. Our product is not just a snack but a journey into the world of sweets and vibrant emotions. We take pride in combining traditions with modern technology, making every Shirin pack an unforgettable part of your day.",
+    "button": "Learn More",
+    "imageAlt": "Shirin corn snack"
+  },
+
+  "whyUs": {
+    "title": "Why Choose Us",
+    "quality": {
+      "title": "High Quality",
+      "description": "Our products undergo strict quality control to ensure every bite is fresh and delicious."
+    },
+    "ingredients": {
+      "title": "Natural Ingredients",
+      "description": "We use only natural components with no artificial additives."
+    },
+    "flavors": {
+      "title": "Unique Flavors",
+      "description": "We create unique flavors that you won't find with other manufacturers."
+    },
+    "button": "Learn More"
+  },
+
+  "footer": {
+    "companyInfo": {
+      "description": "We produce crispy corn snacks that have won the trust of millions of consumers.",
+      "rightsReserved": "All rights reserved."
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "products": "Products",
+      "about": "About Us",
+      "contact": "Contact"
+    },
+    "contact": {
+      "title": "Contact Info",
+      "address": {
+        "label": "Address",
+        "value": "42 Happy Street, Tashkent"
+      },
+      "phone": {
+        "label": "Phone",
+        "value": "+998 (90) 123-45-67"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@shirin.com"
+      }
+    },
+    "note": "Made with love for all sweet lovers"
+  },
+
+  "productsPage": {
+    "title": "All Products",
+    "description": "We are proud to offer a wide range of sweet corn products that delight our customers with high quality and unforgettable taste.",
+    "products": {
+      "product1": "Sweet Corn Classic",
+      "product2": "Sweet Corn Premium",
+      "product3": "Sweet Corn Deluxe",
+      "product4": "Sweet Corn Special",
+      "product5": "Sweet Corn Delight",
+      "product6": "Sweet Corn Luxury",
+      "product7": "Sweet Corn Exclusive",
+      "product8": "Sweet Corn Supreme"
+    }
+  },
+
+  "certificates": {
+    "title": "Certificates",
+    "description": "Shirin is certified to international standards for quality and product safety. Our certificates are a guarantee of the high standard of every item."
+  },
+
+  "aboutUsPage": {
+    "hero": {
+      "title": "About Our Company",
+      "description": "Shirin is a recognizable brand in Uzbekistan specializing in sweet corn products. We strive to bring sweetness to every home using only the best ingredients.",
+      "imageAlt": "Shirin Brand Showcase"
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "We value quality, innovation, and heritage. Every Shirin product is crafted with soul and respect for Uzbek culinary traditions.",
+      "imageAlt": "Our Values"
+    },
+    "approach": {
+      "title": "Our Business Approach",
+      "description": "Our goal is not just production but creating products that bring joy. We actively adopt eco-friendly technologies and support the sustainable development of Uzbekistan's agricultural sector.",
+      "imageAlt": "Our Approach"
+    }
+  },
+
+  "contactUsPage": {
+    "title": "Contact Us",
+    "description": "Having a technical issue? Want to provide feedback on a new feature? Need details about our business plan? Let us know.",
+    "form": {
+      "email": {
+        "label": "Your Email",
+        "placeholder": "name@example.com"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Tell us how we can help"
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Leave a comment..."
+      },
+      "submit": "Send Message"
+    }
+  }
+}
+  

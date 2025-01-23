@@ -1,8 +1,11 @@
 // src/components/AboutUs.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const AboutUs = () => {
+  const { t } = useTranslation(); // Access translation utilities
+
   return (
     <section
       id="about"
@@ -18,31 +21,20 @@ const AboutUs = () => {
         >
           <div className="md:w-1/2 space-y-6 z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-600 leading-tight drop-shadow-md">
-              О нас
+              {t('aboutUs.title')}
             </h2>
             <p className="text-base md:text-lg text-gray-700">
-              Shirin — это ведущая компания, специализирующаяся на
-              производстве хрустящих кукурузных снеков, которые уже
-              полюбили миллионы людей в Узбекистане, Казахстане и
-              Кыргызстане. Наши снеки создаются с особой заботой и
-              соблюдением высоких стандартов качества, чтобы каждый
-              кусочек приносил удовольствие и атмосферу праздника.
+              {t('aboutUs.paragraph1')}
             </p>
             <p className="text-base md:text-lg text-gray-700">
-              Используя лучшие сорта кукурузы и натуральные ингредиенты,
-              мы разрабатываем инновационные вкусы, которые впечатляют
-              как детей, так и взрослых. Наш продукт — не просто
-              перекус, а целое путешествие в мир сладостей и ярких
-              эмоций. Мы гордимся тем, что объединяем традиции и
-              современные технологии, делая каждую пачку Shirin
-              незабываемой частью вашего дня.
+              {t('aboutUs.paragraph2')}
             </p>
             <div>
               <a
                 href="/about"
                 className="inline-block bg-gradient-to-r from-yellow-500 to-orange-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
               >
-                Узнать больше
+                {t('aboutUs.button')}
               </a>
             </div>
           </div>

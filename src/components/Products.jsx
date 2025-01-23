@@ -2,26 +2,30 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules'; // <-- IMPORTANT: new path
+import { useTranslation } from 'react-i18next'; // Import i18n
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const Products = () => {
-  const slides = [
-    { id: 1, src: '/images/product2.PNG', title: 'Шоколадные конфеты', description: 'Нежнейший вкус и ручная работа' },
-    { id: 2, src: '/images/product3.PNG', title: 'Ароматное печенье', description: 'Сдобное печенье для всей семьи' },
-    { id: 3, src: '/images/product4.PNG', title: 'Торты на заказ', description: 'Сладкие шедевры для особых случаев' },
-    { id: 4, src: '/images/product5.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 5, src: '/images/product1.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 6, src: '/images/product6.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 7, src: '/images/product7.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
-    { id: 8, src: '/images/product8.PNG', title: 'Фруктовые десерты', description: 'Освежающие вкусы и натуральные ингредиенты' },
+  const { t } = useTranslation(); // Access translation utilities
 
+  const slides = [
+    { id: 1, src: '/images/product2.PNG', title: t('products.chocolates.title'), description: t('products.chocolates.description') },
+    { id: 2, src: '/images/product3.PNG', title: t('products.cookies.title'), description: t('products.cookies.description') },
+    { id: 3, src: '/images/product4.PNG', title: t('products.cakes.title'), description: t('products.cakes.description') },
+    { id: 4, src: '/images/product5.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
+    { id: 5, src: '/images/product1.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
+    { id: 6, src: '/images/product6.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
+    { id: 7, src: '/images/product7.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
+    { id: 8, src: '/images/product8.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
   ];
 
   return (
     <section id="products" className="py-16 px-4">
       <div className="container mx-auto">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 text-orange-600">Наши продукты</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 text-orange-600">
+          {t('products.title')}
+        </h2>
 
         <Swiper
           modules={[Navigation]}

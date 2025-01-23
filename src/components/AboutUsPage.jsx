@@ -1,30 +1,31 @@
-// src/components/AboutUsPage.jsx
+// src/pages/AboutUsPage.jsx
 import React from 'react';
-import WhyUs from '../components/WhyUs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
+import WhyUs from '../components/WhyUs';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 const AboutUsPage = () => {
+  const { t } = useTranslation(); // Access translations
+
   return (
     <div className="about-us-page">
       {/* Hero Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between animate-fade-in">
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-scale-up">О нашей компании</h1>
-            <p className="mt-4 text-xl">
-              Shirin — узнаваемый бренд в Узбекистане, специализирующийся на
-              производстве сладких кукурузных продуктов. Мы стремимся привнести
-              сладость в каждый дом, используя только лучшие ингредиенты.
-            </p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-scale-up">
+              {t('aboutUsPage.hero.title')}
+            </h1>
+            <p className="mt-4 text-xl">{t('aboutUsPage.hero.description')}</p>
           </div>
           <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
             <img
               src="/images/whyuscard11.PNG"
-              alt="Shirin Brand Showcase"
+              alt={t('aboutUsPage.hero.imageAlt')}
               className="w-2/3 animate-slide-up"
             />
           </div>
@@ -37,16 +38,15 @@ const AboutUsPage = () => {
           <div className="lg:w-1/2 flex justify-center order-2 lg:order-1">
             <img
               src="/images/our-values.PNG"
-              alt="Our Values"
+              alt={t('aboutUsPage.values.imageAlt')}
               className="w-2/3 animate-bounce-in"
             />
           </div>
           <div className="lg:w-1/2 text-center lg:text-left order-1 lg:order-2">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-rotate-in">Наши ценности</h2>
-            <p className="text-xl mt-4">
-              Мы ценим качество, инновации и наследие. Каждый продукт Shirin
-              создается с душой и уважением к традициям узбекской кулинарии.
-            </p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-rotate-in">
+              {t('aboutUsPage.values.title')}
+            </h2>
+            <p className="text-xl mt-4">{t('aboutUsPage.values.description')}</p>
           </div>
         </div>
       </section>
@@ -55,18 +55,17 @@ const AboutUsPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:justify-between">
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-fade-in">Наш подход к бизнесу</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-fade-in">
+              {t('aboutUsPage.approach.title')}
+            </h2>
             <p className="mt-4 text-xl animate-slide-right">
-              Наша цель — не только производство, но и создание продуктов,
-              которые приносят радость. Мы активно внедряем экологически чистые
-              технологии и поддерживаем устойчивое развитие аграрного сектора
-              Узбекистана.
+              {t('aboutUsPage.approach.description')}
             </p>
           </div>
           <div className="lg:w-1/2 mt-6 lg:mt-0 flex justify-center">
             <img
               src="/images/our-approach.PNG"
-              alt="Our Approach"
+              alt={t('aboutUsPage.approach.imageAlt')}
               className="w-2/3 animate-slide-up"
             />
           </div>
@@ -80,12 +79,10 @@ const AboutUsPage = () => {
       <section className="py-16 text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl lg:text-5xl text-orange-500 font-bold animate-scale-up">
-            Сертификаты
+            {t('certificates.title')}
           </h2>
           <p className="text-gray-600 mt-2 text-lg px-6 py-6 animate-slide-up">
-            Shirin сертифицирована по международным стандартам качества и
-            безопасности продукции. Наши сертификаты — это гарантия высокого
-            уровня каждого изделия.
+            {t('certificates.description')}
           </p>
 
           {/* Swiper Carousel for Smaller Screens */}
@@ -94,32 +91,32 @@ const AboutUsPage = () => {
               modules={[Navigation, Autoplay]}
               navigation
               autoplay={{
-                delay: 3000, // 3 seconds per slide
+                delay: 3000,
                 disableOnInteraction: false,
               }}
               loop={true}
-              slidesPerView={1} // Show one slide at a time
+              slidesPerView={1}
               spaceBetween={20}
               className="max-w-sm mx-auto"
             >
               <SwiperSlide>
                 <img
                   src="/images/certificate1.jpg"
-                  alt="ISO Quality Certificate"
+                  alt={t('certificates.image1Alt')}
                   className="rounded-lg hover:scale-105 transition-transform duration-300"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/certificate2.jpg"
-                  alt="Safety Certificate"
+                  alt={t('certificates.image2Alt')}
                   className="rounded-lg hover:scale-105 transition-transform duration-300"
                 />
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   src="/images/certificate3.jpg"
-                  alt="Sustainability Certificate"
+                  alt={t('certificates.image3Alt')}
                   className="rounded-lg hover:scale-105 transition-transform duration-300"
                 />
               </SwiperSlide>
@@ -130,17 +127,17 @@ const AboutUsPage = () => {
           <div className="hidden md:flex flex-wrap justify-center gap-16 mt-4">
             <img
               src="/images/certificate1.jpg"
-              alt="ISO Quality Certificate"
+              alt={t('certificates.image1Alt')}
               className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate2.jpg"
-              alt="Safety Certificate"
+              alt={t('certificates.image2Alt')}
               className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
             <img
               src="/images/certificate3.jpg"
-              alt="Sustainability Certificate"
+              alt={t('certificates.image3Alt')}
               className="w-1/4 rounded-lg hover:scale-105 transition-transform duration-300 animate-bounce-in"
             />
           </div>

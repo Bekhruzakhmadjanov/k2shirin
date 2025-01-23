@@ -1,23 +1,28 @@
-// src/components/Hero.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t, i18n } = useTranslation(); // Access translation utilities
   const [mainImage, setMainImage] = useState('/images/hero-page.png');
   const [expanded, setExpanded] = useState(false);
+  const timeoutRef = useRef(null); // Reference to clear timeouts
 
   useEffect(() => {
     const header = document.querySelector('.animated-header');
     if (!header) return;
 
-    const texts = [
-      'Добро пожаловать в мир Shirin!',
-      'Вкус известный каждому.',
-      'Здесь вы можете узнать больше о нас и нашем продукте.',
-    ];
-
     let currentIndex = 0;
-    function changeText() {
+
+    const changeText = () => {
+      // Array of texts for the current language
+      const texts = [
+        t('hero.welcome'),
+        t('hero.tasteKnown'),
+        t('hero.learnMore'),
+      ];
+
+      // Clear header and populate with animated spans
       header.innerHTML = '';
       const spanElements = texts[currentIndex].split(' ').map((word) => {
         const span = document.createElement('span');
@@ -28,24 +33,37 @@ const Hero = () => {
         span.style.transition = 'all 0.6s ease';
         return span;
       });
+
       spanElements.forEach((span, i) => {
         setTimeout(() => {
           span.style.opacity = '1';
           span.style.transform = 'translateY(0)';
         }, i * 100);
         header.appendChild(span);
-        header.appendChild(document.createTextNode(' '));
+        header.appendChild(document.createTextNode(' ')); // Add space between words
       });
+
+      // Move to the next text in the array
       currentIndex = (currentIndex + 1) % texts.length;
-      setTimeout(changeText, 4000);
-    }
+
+      // Schedule the next text change
+      timeoutRef.current = setTimeout(changeText, 4000);
+    };
+
+    // Start the animation
     changeText();
-  }, []);
+
+    // Cleanup: Clear timeouts when language changes or component unmounts
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [t, i18n.language]); // Re-run when the language changes
 
   return (
     <header id="home" className="py-16">
       <div className="container mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-center">
-
         {/* Text Section */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -57,23 +75,17 @@ const Hero = () => {
             className="animated-header text-3xl md:text-4xl lg:text-5xl font-extrabold text-orange-600 leading-tight mb-4 drop-shadow-md"
             aria-live="polite"
           >
-            <span className="sr-only">Добро пожаловать в мир Shirin!</span>
+            <span className="sr-only">{t('hero.welcome')}</span>
           </h1>
 
           {/* Collapsible Text Block */}
           <div
-            className={`transition-all duration-700 overflow-hidden ${expanded ? 'max-h-[1000px]' : 'max-h-28'
-              } md:max-h-full mb-4 text-gray-700`}
+            className={`transition-all duration-700 overflow-hidden ${
+              expanded ? 'max-h-[1000px]' : 'max-h-28'
+            } md:max-h-full mb-4 text-gray-700`}
           >
-            <p className="text-lg md:text-xl">
-              Мы предлагаем широкий ассортимент сладостей и закусок, которые подойдут для всей семьи.
-              Наши продукты создаются из лучших ингредиентов и с соблюдением традиций, чтобы каждый кусочек
-              приносил радость и удовольствие.
-            </p>
-            <p className="text-base md:text-lg text-gray-600 mt-3">
-              Присоединяйтесь к миллионам довольных клиентов, которые доверяют качеству Shirin. Узнайте больше
-              о нашем ассортименте и сделайте каждый момент сладким!
-            </p>
+            <p className="text-lg md:text-xl">{t('hero.familySnack')}</p>
+            <p className="text-base md:text-lg text-gray-600 mt-3">{t('hero.joinMillions')}</p>
           </div>
 
           {/* "Read more" button - only on mobile */}
@@ -81,7 +93,7 @@ const Hero = () => {
             onClick={() => setExpanded(!expanded)}
             className="inline-block md:hidden bg-orange-200 text-orange-700 px-3 py-1 rounded-md mb-6 transition-colors"
           >
-            {expanded ? 'Свернуть' : '...'}
+            {expanded ? t('hero.collapse') : t('hero.readMore')}
           </button>
 
           {/* Buttons */}
@@ -90,13 +102,13 @@ const Hero = () => {
               href="/products"
               className="bg-orange-500 hover:bg-orange-600 transition-colors text-white font-bold py-2 px-6 rounded-md"
             >
-              Посмотреть продукты
+              {t('hero.viewProducts')}
             </a>
             <a
               href="/contact"
               className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white transition-colors font-bold py-2 px-6 rounded-md"
             >
-              Связаться с нами
+              {t('hero.contactUs')}
             </a>
           </div>
         </motion.div>

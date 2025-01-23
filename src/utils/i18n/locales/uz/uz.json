@@ -1,0 +1,155 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "products": "Mahsulotlar",
+    "about": "Biz haqimizda",
+    "contact": "Bog'lanish",
+    "menu": "Menyu",
+    "language": "Til"
+  },
+    
+  "hero": {
+    "welcome": "Shirin dunyosiga xush kelibsiz!",
+    "tasteKnown": "Hamma biladigan ta'm.",
+    "learnMore": "Biz haqimizda va mahsulotimiz haqida ko'proq bilib oling.",
+    "familySnack": "Biz barcha oila a'zolari uchun mos shirinliklar va tamaddi mahsulotlarining keng tanlovini taklif etamiz. Mahsulotlarimiz eng yaxshi ingredientlardan va an'analarga amal qilgan holda yaratiladi, shunda har bir bo'lak quvonch va zavq olib keladi.",
+    "joinMillions": "Shirin sifatiga ishonadigan millionlab mijozlarga qo'shiling. Mahsulotlarimiz assortimentini bilib oling va har bir lahzani shirin qiling!",
+    "readMore": "Batafsil o'qing",
+    "collapse": "Yig'ishtirish",
+    "viewProducts": "Mahsulotlarni ko'rish",
+    "contactUs": "Biz bilan bog'laning"
+  },
+
+  "products": {
+    "title": "Bizning mahsulotlarimiz",
+    "chocolates": {
+      "title": "Shokoladli konfetlar",
+      "description": "Eng nozik ta'm va qo'l mehnati."
+    },
+    "cookies": {
+      "title": "Aromali pechenyelar",
+      "description": "Barcha oila uchun mazali pechenyelar."
+    },
+    "cakes": {
+      "title": "Buyurtma tortlar",
+      "description": "Maxsus holatlar uchun shirin asarlar."
+    },
+    "fruitDesserts": {
+      "title": "Mevali desertlar",
+      "description": "Yorqin ta'mlar va tabiiy ingredientlar."
+    }
+  },
+
+  "aboutUs": {
+    "title": "Biz haqimizda",
+    "paragraph1": "Shirin - bu O'zbekiston, Qozog'iston va Qirg'izistonda millionlab odamlarning sevgisiga sazovor bo'lgan xushbo'y makkajo'xori gazaklarini ishlab chiqarishga ixtisoslashgan yetakchi kompaniya. Bizning gazaklarimiz har bir bo'lak quvonch va bayram muhitini olib kelishi uchun yuqori sifat standartlariga qat'iy rioya qilish bilan yaratiladi.",
+    "paragraph2": "Eng yaxshi makkajo'xori navlari va tabiiy ingredientlardan foydalanib, biz bolalar va kattalarni hayratga soladigan innovatsion ta'mlarni ishlab chiqamiz. Mahsulotimiz - bu oddiy tamaddi emas, balki shirinliklar va yorqin hissiyotlar dunyosiga sayohat. Biz an'analar va zamonaviy texnologiyalarni birlashtirganimiz bilan faxrlanamiz, har bir Shirin paketi sizning kuningizning unutilmas qismiga aylanadi.",
+    "button": "Batafsil ma'lumot",
+    "imageAlt": "Shirin makkajo'xori gazaklari"
+  },
+
+  "whyUs": {
+    "title": "Nega bizni tanlashadi",
+    "quality": {
+      "title": "Yuqori sifat",
+      "description": "Mahsulotimiz har bir bo'lak yangi va mazali bo'lishi uchun qat'iy nazoratdan o'tadi."
+    },
+    "ingredients": {
+      "title": "Tabiiy ingredientlar",
+      "description": "Biz faqat tabiiy tarkibiy qismlardan foydalanamiz, sun'iy qo'shimchalarsiz."
+    },
+    "flavors": {
+      "title": "Noyob ta'mlar",
+      "description": "Biz boshqa ishlab chiqaruvchilarda yo'q bo'lgan noyob ta'mlarni ishlab chiqamiz."
+    },
+    "button": "Batafsil"
+  },
+
+  "footer": {
+    "companyInfo": {
+      "description": "Biz millionlab iste'molchilar ishonchini qozongan xushbo'y makkajo'xori gazaklarini ishlab chiqaramiz.",
+      "rightsReserved": "Barcha huquqlar himoyalangan."
+    },
+    "quickLinks": {
+      "title": "Tez havolalar",
+      "home": "Bosh sahifa",
+      "products": "Mahsulotlar",
+      "about": "Biz haqimizda",
+      "contact": "Bog'lanish"
+    },
+    "contact": {
+      "title": "Bog'lanish",
+      "address": {
+        "label": "Manzil",
+        "value": "Baxtli ko'chasi 42, Toshkent"
+      },
+      "phone": {
+        "label": "Telefon",
+        "value": "+998 (90) 123-45-67"
+      },
+      "email": {
+        "label": "Email",
+        "value": "info@shirin.com"
+      }
+    },
+    "note": "Barcha shirinlik ishqibozlari uchun sevgi bilan yaratilgan"
+  },
+
+  "productsPage": {
+    "title": "Barcha Mahsulotlar",
+    "description": "Biz mijozlarimizni yuqori sifat va unutilmas ta'm bilan quvontiradigan shirin makkajo'xori mahsulotlarining keng tanlovini taqdim etishdan faxrlanamiz.",
+    "products": {
+      "product1": "Shirin Makkajo'xori Klassik",
+      "product2": "Shirin Makkajo'xori Premium",
+      "product3": "Shirin Makkajo'xori Deluks",
+      "product4": "Shirin Makkajo'xori Maxsus",
+      "product5": "Shirin Makkajo'xori Zavq",
+      "product6": "Shirin Makkajo'xori Hashamat",
+      "product7": "Shirin Makkajo'xori Eksklyuziv",
+      "product8": "Shirin Makkajo'xori Oliy"
+    }
+  },
+
+  "certificates": {
+    "title": "Sertifikatlar",
+    "description": "Shirin xalqaro sifat va mahsulot xavfsizligi standartlariga muvofiq sertifikatlangan. Sertifikatlarimiz har bir mahsulot yuqori darajada ekanligining kafolatidir."
+  },
+
+  "aboutUsPage": {
+    "hero": {
+      "title": "Kompaniyamiz haqida",
+      "description": "Shirin - O‘zbekistonda taniqli brend bo‘lib, shirin makkajo‘xori mahsulotlarini ishlab chiqarishga ixtisoslashgan. Biz faqat eng yaxshi ingredientlardan foydalanib, har bir xonadonga shirinlik olib kirishni maqsad qilganmiz.",
+      "imageAlt": "Shirin Brendi"
+    },
+    "values": {
+      "title": "Bizning qadriyatlarimiz",
+      "description": "Biz sifat, innovatsiya va merosni qadrlaymiz. Har bir Shirin mahsuloti jon va o'zbek oshxona an'analariga hurmat bilan yaratilgan.",
+      "imageAlt": "Bizning qadriyatlarimiz"
+    },
+    "approach": {
+      "title": "Biznesga yondashuvimiz",
+      "description": "Bizning maqsadimiz nafaqat ishlab chiqarish, balki quvonch keltiradigan mahsulotlarni yaratishdir. Biz ekologik toza texnologiyalarni faol joriy qilamiz va O'zbekistonning qishloq xo'jaligini barqaror rivojlanishini qo'llab-quvvatlaymiz.",
+      "imageAlt": "Bizning yondashuvimiz"
+    }
+  },
+
+  "contactUsPage": {
+    "title": "Biz bilan bog'laning",
+    "description": "Texnik muammo yuzaga keldimi? Yangi funksiyaga fikr bildirmoqchimisiz? Bizning biznes-rejamiz haqidagi tafsilotlar kerakmi? Bizga xabar bering.",
+    "form": {
+      "email": {
+        "label": "Sizning emailingiz",
+        "placeholder": "name@misol.com"
+      },
+      "subject": {
+        "label": "Mavzu",
+        "placeholder": "Biz sizga qanday yordam bera olishimizni ayting"
+      },
+      "message": {
+        "label": "Sizning xabaringiz",
+        "placeholder": "Izoh qoldiring..."
+      },
+      "submit": "Xabarni yuborish"
+    }
+  }
+}
