@@ -7,7 +7,6 @@
     "menu": "Menyu",
     "language": "Til"
   },
-    
   "hero": {
     "welcome": "Shirin dunyosiga xush kelibsiz!",
     "tasteKnown": "Hamma biladigan ta'm.",
@@ -19,27 +18,45 @@
     "viewProducts": "Mahsulotlarni ko'rish",
     "contactUs": "Biz bilan bog'laning"
   },
-
   "products": {
-    "title": "Bizning mahsulotlarimiz",
-    "chocolates": {
-      "title": "Shokoladli konfetlar",
-      "description": "Eng nozik ta'm va qo'l mehnati."
+    "title": "Mahsulotlarimiz",
+    "sweetCornSnacks": {
+      "title": "Shirin makkajo'xori gazaklari",
+      "description": "Butun oila uchun xushbo'y gazaklar."
     },
-    "cookies": {
-      "title": "Aromali pechenyelar",
-      "description": "Barcha oila uchun mazali pechenyelar."
+    "productVariants": {
+      "classicCorn": {
+        "title": "Klassik makkajo'xori",
+        "description": "Shirin va tabiiy ta'm."
+      },
+      "chocoCorn": {
+        "title": "Shokoladli sharchalar",
+        "description": "Shokolad bilan qoplangan makkajo'xori sharchalari."
+      },
+      "miniPuffs": {
+        "title": "Mini-gazaklar",
+        "description": "Kichkina va mazali gazaklar."
+      },
+      "prizePacks": {
+        "title": "Syurprizli gazaklar",
+        "description": "Sovg'ali mazali gazaklar."
+      }
     },
-    "cakes": {
-      "title": "Buyurtma tortlar",
-      "description": "Maxsus holatlar uchun shirin asarlar."
-    },
-    "fruitDesserts": {
-      "title": "Mevali desertlar",
-      "description": "Yorqin ta'mlar va tabiiy ingredientlar."
+    "uniqueFeatures": {
+      "highQuality": {
+        "title": "Shirin makkajo'xori WOW",
+        "description": "Eng yaxshi ingredientlardan tayyorlangan."
+      },
+      "familyFriendly": {
+        "title": "Shirin makkajo'xori Riko",
+        "description": "Bolalar va kattalar uchun mos."
+      },
+      "varietyOfFlavors": {
+        "title": "Shirin makkajo'xori Bibo",
+        "description": "Tanlash uchun turli xil ta'mlar."
+      }
     }
   },
-
   "aboutUs": {
     "title": "Biz haqimizda",
     "paragraph1": "Shirin - bu O'zbekiston, Qozog'iston va Qirg'izistonda millionlab odamlarning sevgisiga sazovor bo'lgan xushbo'y makkajo'xori gazaklarini ishlab chiqarishga ixtisoslashgan yetakchi kompaniya. Bizning gazaklarimiz har bir bo'lak quvonch va bayram muhitini olib kelishi uchun yuqori sifat standartlariga qat'iy rioya qilish bilan yaratiladi.",
@@ -47,7 +64,6 @@
     "button": "Batafsil ma'lumot",
     "imageAlt": "Shirin makkajo'xori gazaklari"
   },
-
   "whyUs": {
     "title": "Nega bizni tanlashadi",
     "quality": {
@@ -64,7 +80,6 @@
     },
     "button": "Batafsil"
   },
-
   "footer": {
     "companyInfo": {
       "description": "Biz millionlab iste'molchilar ishonchini qozongan xushbo'y makkajo'xori gazaklarini ishlab chiqaramiz.",
@@ -81,11 +96,11 @@
       "title": "Bog'lanish",
       "address": {
         "label": "Manzil",
-        "value": "Baxtli ko'chasi 42, Toshkent"
+        "value": "OOO “SHIRIN ERTAK”,Mirobod tumani Banokati ko’chasi, 186/1"
       },
       "phone": {
         "label": "Telefon",
-        "value": "+998 (90) 123-45-67"
+        "value": "+998 (91) 787 77 79"
       },
       "email": {
         "label": "Email",
@@ -94,7 +109,6 @@
     },
     "note": "Barcha shirinlik ishqibozlari uchun sevgi bilan yaratilgan"
   },
-
   "productsPage": {
     "title": "Barcha Mahsulotlar",
     "description": "Biz mijozlarimizni yuqori sifat va unutilmas ta'm bilan quvontiradigan shirin makkajo'xori mahsulotlarining keng tanlovini taqdim etishdan faxrlanamiz.",
@@ -109,12 +123,10 @@
       "product8": "Shirin Makkajo'xori Oliy"
     }
   },
-
   "certificates": {
     "title": "Sertifikatlar",
     "description": "Shirin xalqaro sifat va mahsulot xavfsizligi standartlariga muvofiq sertifikatlangan. Sertifikatlarimiz har bir mahsulot yuqori darajada ekanligining kafolatidir."
   },
-
   "aboutUsPage": {
     "hero": {
       "title": "Kompaniyamiz haqida",
@@ -132,7 +144,6 @@
       "imageAlt": "Bizning yondashuvimiz"
     }
   },
-
   "contactUsPage": {
     "title": "Biz bilan bog'laning",
     "description": "Texnik muammo yuzaga keldimi? Yangi funksiyaga fikr bildirmoqchimisiz? Bizning biznes-rejamiz haqidagi tafsilotlar kerakmi? Bizga xabar bering.",

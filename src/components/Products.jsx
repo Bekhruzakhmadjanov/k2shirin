@@ -10,14 +10,14 @@ const Products = () => {
   const { t } = useTranslation(); // Access translation utilities
 
   const slides = [
-    { id: 1, src: '/images/product2.PNG', title: t('products.chocolates.title'), description: t('products.chocolates.description') },
-    { id: 2, src: '/images/product3.PNG', title: t('products.cookies.title'), description: t('products.cookies.description') },
-    { id: 3, src: '/images/product4.PNG', title: t('products.cakes.title'), description: t('products.cakes.description') },
-    { id: 4, src: '/images/product5.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
-    { id: 5, src: '/images/product1.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
-    { id: 6, src: '/images/product6.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
-    { id: 7, src: '/images/product7.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
-    { id: 8, src: '/images/product8.PNG', title: t('products.fruitDesserts.title'), description: t('products.fruitDesserts.description') },
+    { id: 1, src: '/images/product2.PNG', title: t('products.productVariants.miniPuffs.title'), description: t('products.productVariants.miniPuffs.description') },
+    { id: 2, src: '/images/product3.PNG', title: t('products.productVariants.classicCorn.title'), description: t('products.productVariants.classicCorn.description') },
+    { id: 3, src: '/images/product4.PNG', title: t('products.sweetCornSnacks.title'), description: t('products.sweetCornSnacks.description') },
+    { id: 4, src: '/images/product5.PNG', title: t('products.productVariants.chocoCorn.title'), description: t('products.productVariants.chocoCorn.description') },
+    { id: 5, src: '/images/product1.PNG', title: t('products.productVariants.prizePacks.title'), description: t('products.productVariants.prizePacks.description') },
+    { id: 6, src: '/images/product6.PNG', title: t('products.uniqueFeatures.highQuality.title'), description: t('products.uniqueFeatures.highQuality.description') },
+    { id: 7, src: '/images/product7.PNG', title: t('products.uniqueFeatures.familyFriendly.title'), description: t('products.uniqueFeatures.familyFriendly.description') },
+    { id: 8, src: '/images/product8.PNG', title: t('products.uniqueFeatures.varietyOfFlavors.title'), description: t('products.uniqueFeatures.varietyOfFlavors.description') }
   ];
 
   return (

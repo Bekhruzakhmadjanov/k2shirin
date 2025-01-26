@@ -40,7 +40,7 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-3">{t('footer.contact.title')}</h3>
           <ul className="space-y-2 text-sm">
-            <li>
+            <li className="max-w-xs">
               <span className="font-bold">{t('footer.contact.address.label')}:</span> {t('footer.contact.address.value')}
             </li>
             <li>

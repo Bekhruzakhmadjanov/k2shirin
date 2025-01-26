@@ -7,7 +7,6 @@
     "menu": "Menu",
     "language": "Language"
   },
-
   "hero": {
     "welcome": "Welcome to the world of Shirin!",
     "tasteKnown": "The taste everyone knows.",
@@ -19,27 +18,45 @@
     "viewProducts": "View Products",
     "contactUs": "Contact Us"
   },
-
   "products": {
     "title": "Our Products",
-    "chocolates": {
-      "title": "Chocolate Candies",
-      "description": "Delicate taste and handmade craftsmanship."
+    "sweetCornSnacks": {
+      "title": "Sweet Corn Snacks",
+      "description": "Crispy snacks for the whole family."
     },
-    "cookies": {
-      "title": "Aromatic Cookies",
-      "description": "Buttery cookies for the whole family."
+    "productVariants": {
+      "classicCorn": {
+        "title": "Classic Corn",
+        "description": "Sweet natural taste."
+      },
+      "chocoCorn": {
+        "title": "Chocolate Balls",
+        "description": "Corn balls with chocolate."
+      },
+      "miniPuffs": {
+        "title": "Mini Snacks",
+        "description": "Small and tasty snacks."
+      },
+      "prizePacks": {
+        "title": "Snacks with Surprise",
+        "description": "Delicious snacks with a gift."
+      }
     },
-    "cakes": {
-      "title": "Custom Cakes",
-      "description": "Sweet masterpieces for special occasions."
-    },
-    "fruitDesserts": {
-      "title": "Fruit Desserts",
-      "description": "Refreshing flavors and natural ingredients."
+    "uniqueFeatures": {
+      "highQuality": {
+        "title": "Sweet Corn WOW",
+        "description": "Made from the best ingredients."
+      },
+      "familyFriendly": {
+        "title": "Sweet Corn Riko",
+        "description": "Perfect for kids and adults."
+      },
+      "varietyOfFlavors": {
+        "title": "Sweet Corn Bibo",
+        "description": "A wide range of flavors to choose from."
+      }
     }
   },
-
   "aboutUs": {
     "title": "About Us",
     "paragraph1": "Shirin is a leading company specializing in the production of crispy corn snacks, loved by millions in Uzbekistan, Kazakhstan, and Kyrgyzstan. Our snacks are made with care and adhere to high-quality standards to bring joy and a festive atmosphere to every bite.",
@@ -47,7 +64,6 @@
     "button": "Learn More",
     "imageAlt": "Shirin corn snack"
   },
-
   "whyUs": {
     "title": "Why Choose Us",
     "quality": {
@@ -64,7 +80,6 @@
     },
     "button": "Learn More"
   },
-
   "footer": {
     "companyInfo": {
       "description": "We produce crispy corn snacks that have won the trust of millions of consumers.",
@@ -81,11 +96,11 @@
       "title": "Contact Info",
       "address": {
         "label": "Address",
-        "value": "42 Happy Street, Tashkent"
+        "value": "LLC “SHIRIN ERTAK” Mirobod district Banokati street,186/1"
       },
       "phone": {
         "label": "Phone",
-        "value": "+998 (90) 123-45-67"
+        "value": "+998 (91) 787 77 79"
       },
       "email": {
         "label": "Email",
@@ -94,7 +109,6 @@
     },
     "note": "Made with love for all sweet lovers"
   },
-
   "productsPage": {
     "title": "All Products",
     "description": "We are proud to offer a wide range of sweet corn products that delight our customers with high quality and unforgettable taste.",
@@ -109,12 +123,10 @@
       "product8": "Sweet Corn Supreme"
     }
   },
-
   "certificates": {
     "title": "Certificates",
     "description": "Shirin is certified to international standards for quality and product safety. Our certificates are a guarantee of the high standard of every item."
   },
-
   "aboutUsPage": {
     "hero": {
       "title": "About Our Company",
@@ -132,7 +144,6 @@
       "imageAlt": "Our Approach"
     }
   },
-
   "contactUsPage": {
     "title": "Contact Us",
     "description": "Having a technical issue? Want to provide feedback on a new feature? Need details about our business plan? Let us know.",
@@ -153,4 +164,3 @@
     }
   }
 }
-  
