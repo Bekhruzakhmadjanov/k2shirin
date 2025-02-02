@@ -8,7 +8,7 @@ import AboutUs from './components/AboutUs.jsx';
 import WhyUs from './components/WhyUs.jsx';
 import Footer from './components/Footer.jsx';
 import AboutUsPage from './components/AboutUsPage.jsx';
-import ContactUsPage from './components/ContuctUsPage.jsx';
+import ContactUsPage from './components/ContactUsPage.jsx';
 
 import './index.css';
 
